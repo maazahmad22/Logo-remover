@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #07090e;
+  color: #f8fafc;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #07090e;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Keyboard focus: visible on every interactive element, invisible for mouse clicks. */
+:focus-visible {
+  outline: 2px solid #67e8f9;
+  outline-offset: 2px;
+}
+input[type='range']:focus-visible {
+  outline-offset: 4px;
+}
